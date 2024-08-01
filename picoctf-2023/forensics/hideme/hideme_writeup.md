@@ -14,12 +14,11 @@ It seems that the flag is hidden inside this PNG lets try and open it as an imag
 xdg-open flag.png
 ```
 
-**Output:**
-![](/screenshots/preview-screenshot.png)
+<img src="screenshots/preview-screenshot.png">
 
 As we thought there's nothing we could get from opening it as is
 
-## Searching binary images for embedded files and executable code
+## Searching the binary for embedded files and executable code
 Let's try looking for any embedded files inside the png:
 
 ```bash
@@ -27,7 +26,7 @@ binwalk flag.png
 ```
 
 **Output:**
-![](/screenshots/binwalk_output-screenshot.png)
+<img src="screenshots/binwalk_output-screenshot.png">
 
 Upon examining the output, we notice that it has a directory called `secret/` and it contains `secret/flag.png`
 
@@ -49,7 +48,7 @@ Now that we have extracted the directory we just need to open up the flag
 xdg-open _flag.png.extracted/secret/flag.png
 ```
 **Output:**
-![](/screenshots/flag-screenshot.png)
+<img src="screenshots/flag-screenshot.png">
 
 Well thats the flag, wasn't so hard ey?
 

@@ -18,11 +18,11 @@ wireshark trace.pcap
 
 Looking at a glance we can see that most of the packets with the protocol of `FTP-DATA` are all transmitting the same data but let's just apply a filter to find any packets that would contain the string `picoCTF`
 
-![](/screenshots/filter.png)
+<img src="screenshots/filter.png">
 
 ## Retrieving the flag
 It seems that wireshark found a packet containing the string `picoCTF` in it! Let's open the packet!
 
-![](/screenshots/flag.png)
+<img src="screenshots/flag.png">
 
 Great! We found the flag!

@@ -49,10 +49,10 @@ The string "iBwaWNvQ1RGe1" appears to be encoded or a hash.
 ```
 AABBHHPJGTFRLKVGhpcyBpcyB0aGUgc2VjcmV0OiBwaWNvQ1RGe1IzNERJTkdfTE9LZF8=
 ```
-This looks like Base64 encoded data. Let's decode it:
+This looks like Base64 encoded data. Also be sure to remove any header data that's included in the string! Now lets try and decode it!
 
 ```bash
-echo -n "AABBHHPJGTFRLKVGhpcyBpcyB0aGUgc2VjcmV0OiBwaWNvQ1RGe1IzNERJTkdfTE9LZF8=" | base64 -d
+echo -n "VGhpcyBpcyB0aGUgc2VjcmV0OiBwaWNvQ1RGe1IzNERJTkdfTE9LZF8=" | base64 -d
 ```
 
 **Output:**
@@ -107,4 +107,4 @@ picoCTF{R34DING_LOKd_fil56_succ3ss_b98dda6a}
 
 ## Conclusion
 We successfully retrieved the flag: `picoCTF{R34DING_LOKd_fil56_succ3ss_b98dda6a}`.
-```
+
